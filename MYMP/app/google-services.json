@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015529360726",
+    "project_id": "mymp-f512b",
+    "storage_bucket": "mymp-f512b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015529360726:android:b8ec556bb3e373af329af7",
+        "android_client_info": {
+          "package_name": "com.kmu.mymp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015529360726-bottu75oult4q3ekpmm8uu8l4e4mhfps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTL4dMjgLJqcQ2pn6fMqF0rFq6JSccreI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015529360726-bottu75oult4q3ekpmm8uu8l4e4mhfps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
