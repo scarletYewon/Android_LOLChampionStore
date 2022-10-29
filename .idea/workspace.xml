@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d5f4ee5-46e9-4d7e-8f00-5bafe7621073" name="Changes" comment="" />
+    <list default="true" id="0d5f4ee5-46e9-4d7e-8f00-5bafe7621073" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/ListAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/ListViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/Repo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/ListViewAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/MyinfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/MyinfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/ThirdActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/src/main/java/com/kmu/mymp/ThirdActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/activity_list_view_adapter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/activity_myinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/activity_myinfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/activity_third.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/app/src/main/res/layout/activity_third.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYMP/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MYMP/gradle.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

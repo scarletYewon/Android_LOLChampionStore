@@ -28,13 +28,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ListViewAdapter"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ThirdActivity"
             android:exported="false">
             <meta-data

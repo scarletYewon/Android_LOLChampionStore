@@ -1,279 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/back"
-        android:orientation="vertical"
-        tools:context=".ThirdActivity">
-
-        <TextView
-            android:text="오늘의 챔피언을 들러보세요~"
-            android:fontFamily="@font/bmjua_ttf"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
+<layout>
+    <GridLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_weight="3"
-            android:gravity="top"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:paddingTop="28dp">
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:orientation="vertical"
+            tools:context=".ThirdActivity">
 
-            <LinearLayout
-                android:layout_marginRight="5dp"
-                android:background="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img1"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/kaisa" />
-
-                <TextView
-                    android:gravity="center"
-                    android:id="@+id/item1"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="카이사"
-                    android:textColor="@color/black"/>
-
-                <TextView
-                    android:id="@+id/cost1"
-                    android:gravity="center"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="6300원"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginRight="5dp"
-                android:background="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img2"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/lullu" />
-
-                <TextView
-                    android:id="@+id/item2"
-                    android:gravity="center"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="룰루"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/cost2"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="4800원"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img3"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/ash" />
-
-                <TextView
-                    android:id="@+id/item3"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="애쉬"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/cost3"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="450원"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="top"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:background="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img4"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/ari" />
-
-                <TextView
-                    android:id="@+id/item4"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="아리"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-                <TextView
-                    android:id="@+id/cost4"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="3150원"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:background="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img5"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/shyvana" />
-
-                <TextView
-                    android:id="@+id/item5"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="쉬바나"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-                <TextView
-                    android:id="@+id/cost5"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="3150원"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:background="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:id="@+id/img6"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/seraphine" />
-
-                <TextView
-                    android:id="@+id/item6"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="세라핀"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-                <TextView
-                    android:id="@+id/cost6"
-                    android:fontFamily="@font/bmjua_ttf"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="6300원"
-                    android:gravity="center"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/myInfo"
-                android:text="회원정보"
+            <TextView
+                android:text="오늘의 챔피언을 들러보세요~"
                 android:fontFamily="@font/bmjua_ttf"
-                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <Button
-                android:id="@+id/newItem"
-                android:text="상품등록"
-                android:fontFamily="@font/bmjua_ttf"
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button
-                android:id="@+id/delItem"
-                android:text="상품삭제"
-                android:fontFamily="@font/bmjua_ttf"
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
 
-    </LinearLayout>
-</GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="3"
+                android:gravity="top"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="28dp">
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img1"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/kaisa" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/item1"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="카이사"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/cost1"
+                        android:gravity="center"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="6300원"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img2"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/lullu" />
+
+                    <TextView
+                        android:id="@+id/item2"
+                        android:gravity="center"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="룰루"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/cost2"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="4800원"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img3"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ash" />
+
+                    <TextView
+                        android:id="@+id/item3"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="애쉬"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/cost3"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="450원"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="top"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img4"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ari" />
+
+                    <TextView
+                        android:id="@+id/item4"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="아리"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cost4"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="3150원"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img5"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/shyvana" />
+
+                    <TextView
+                        android:id="@+id/item5"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="쉬바나"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cost5"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="3150원"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/img6"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/seraphine" />
+
+                    <TextView
+                        android:id="@+id/item6"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="세라핀"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cost6"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="6300원"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/myInfo"
+                    android:text="회원정보"
+                    android:fontFamily="@font/bmjua_ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/newItem"
+                    android:text="상품등록"
+                    android:fontFamily="@font/bmjua_ttf"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/delItem"
+                    android:text="상품삭제"
+                    android:fontFamily="@font/bmjua_ttf"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </GridLayout>
+</layout>
