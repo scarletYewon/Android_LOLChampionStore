@@ -27,7 +27,12 @@ class ThirdActivity : AppCompatActivity() {
     }
     private fun memberOrNot(a: Boolean) {
         if(a == false) {
-            startActivity(Intent(this, MyinfoActivity::class.java))
+            var b = intent.getStringExtra("mail")
+            var c = intent.getStringExtra("pw")
+            val intent = (Intent(this, MyinfoActivity::class.java))
+            intent.putExtra("mail", b)
+            intent.putExtra("pw", c)
+            startActivity(intent)
         }
         else{
             startActivity(Intent(this, SecondActivity::class.java))
