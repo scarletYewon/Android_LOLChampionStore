@@ -21,7 +21,7 @@ class SecondActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySecondBinding
     private var auth : FirebaseAuth? = null
 
-    private fun createAccount(newId: String, newPw: String, name: String, phone: String, address: String) {
+    private fun createAccount(newId: String, newPw: String, name: String, phone: String, address: String, accept: Boolean) {
         var eng = false
         var num = false
         for (i: Int in 0 until newPw.length) {
@@ -37,7 +37,7 @@ class SecondActivity : AppCompatActivity() {
                 break
             }
         }
-        if (newId.isNotEmpty() && newPw.isNotEmpty() && name.isNotEmpty() && phone.isNotEmpty() && address.isNotEmpty() && num == true && eng == true) {
+        if (newId.isNotEmpty() && newPw.isNotEmpty() && name.isNotEmpty() && phone.isNotEmpty() && address.isNotEmpty() && accept == true && num == true && eng == true) {
             auth?.createUserWithEmailAndPassword(newId, newPw)
                 ?.addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
@@ -60,6 +60,12 @@ class SecondActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
         }
+        else if (accept == false){
+            Toast.makeText(
+                this, "개인정보 수집 및 이용에 동의해주세요",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
         else {
             Toast.makeText(
                 this, "모든 칸을 채워주새요",
@@ -74,7 +80,7 @@ class SecondActivity : AppCompatActivity() {
         auth = Firebase.auth
         binding = DataBindingUtil.setContentView(this, R.layout.activity_second)
         binding.save.setOnClickListener{
-            createAccount(binding.newId.text.toString(),binding.newPw.text.toString(),binding.name.text.toString(),binding.number.text.toString(),binding.address.text.toString())
+            createAccount(binding.newId.text.toString(),binding.newPw.text.toString(),binding.name.text.toString(),binding.number.text.toString(),binding.address.text.toString(),binding.accept.isChecked)
         }
         val show_Btn = findViewById<Button>(R.id.show_Btn)
         show_Btn.setOnClickListener {
