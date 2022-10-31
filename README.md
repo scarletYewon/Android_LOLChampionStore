@@ -2,7 +2,7 @@
 
 ## 💻 소프트웨어학부 20213047 이예원
 
-# LOL Champion Store
+# 🎮 LOL Champion Store 🎮
 
 리그오브레전드(롤) 챔피언 상점
 
