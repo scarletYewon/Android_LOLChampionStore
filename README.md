@@ -48,6 +48,7 @@ Firebase realtime database
 
 ### MainActivity : 로그인
 
+- Relative Layout
 - 앱을 실행하면 뜨는 첫번째 화면
 - ‘로그인’버튼, ‘회원가입’버튼, ‘비회원으로 구경하기’ 버튼으로 구성
 - 로그인에 성공하면 상품 리스트 화면(ThirdActivity)로 이동
@@ -56,6 +57,7 @@ Firebase realtime database
 
 ### SecondActivity : 회원가입
 
+- Linear Layout
 - 회원정보를 입력하면 Firebase realtime database로 정보를 전달하고 계정 생성
 - [이메일, 비밀번호, 이름, 전화번호, 주소, 개인정보 수집 및 이용 동의 여부] 총 6개의 항목으로 구성
 - 모든 칸을 채워야 회원가입 가능
@@ -65,12 +67,14 @@ Firebase realtime database
 
 ### ThirdActivity : 상품 리스트
 
+- Grid Layout
 - 6개의 상품이 보여짐
 - 회원정보버튼을 클릭하면 MyinfoActivity로 이동
 - font : 배달의민족 주아체
 
 ### MyinfoActivity : 내 정보
 
+- Linear Layout
 - 회원가입시 입력한 이메일, 이름, 전화번호, 주소 정보를 보여줌
 - Firebase에서 제공하는 realtime database에서 데이터를 받아옴
 - 비회원일 경우 회원가입 페이지(SecondActivity)로 이동
