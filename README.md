@@ -94,7 +94,7 @@ Firebase realtime database
 - 회원정보
 <img width="348" alt="info" src="https://user-images.githubusercontent.com/81704418/198977170-cda18bbd-cb47-4413-b6dd-2e82b40b4bc6.png">
 
-# 주요 코드 및 기능 설명
+# 주요 코드 및 기능
 
 - 로그인
 
