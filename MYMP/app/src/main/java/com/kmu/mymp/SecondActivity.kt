@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -11,6 +12,7 @@ import androidx.databinding.DataBindingUtil
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import com.kmu.mymp.databinding.ActivitySecondBinding
 import java.lang.Character.isDigit
@@ -40,11 +42,24 @@ class SecondActivity : AppCompatActivity() {
         if (newId.isNotEmpty() && newPw.isNotEmpty() && name.isNotEmpty() && phone.isNotEmpty() && address.isNotEmpty() && accept == true && num == true && eng == true) {
             auth?.createUserWithEmailAndPassword(newId, newPw)
                 ?.addOnCompleteListener(this) { task ->
+                    val uid = FirebaseAuth.getInstance().uid ?:""
                     if (task.isSuccessful) {
+                        val database = FirebaseDatabase.getInstance()
+                        val myRef = database.getReference()
+                        val dataInput = Users(
+                            binding.newId.text.toString(),
+                            binding.newPw.text.toString(),
+                            binding.name.text.toString(),
+                            binding.number.text.toString(),
+                            binding.address.text.toString(),
+                            binding.accept.isChecked
+                        )
+                        myRef.child(uid).setValue(dataInput)
                         Toast.makeText(
                             this, "계정 생성 완료.",
                             Toast.LENGTH_SHORT
                         ).show()
+
                         moveMainPage(task.result?.user)
                     } else {
                         Toast.makeText(

@@ -60,13 +60,9 @@ class MainActivity : AppCompatActivity() {
     }
     // 로그인이 성공하면 다음 페이지로 넘어가는 함수
     private fun moveMainPage(user: FirebaseUser?) {
-        var myMail = binding.email.text.toString()
-        var myPw = binding.pw.text.toString()
         // 파이어베이스 유저 상태가 있을 경우 다음 페이지로 넘어갈 수 있음
         if(user != null) {
             val intent = (Intent(this, ThirdActivity::class.java))
-            intent.putExtra("mail", myMail)
-            intent.putExtra("pw", myPw)
             startActivity(intent)
         }
     }
